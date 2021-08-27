@@ -47,6 +47,7 @@ public class OSLogOutput: LogOutput {
         }
     }
 
+    /// Blows up `EXC_BAD_ACCESS` if templated string has more placeholders than `args.count`.
     fileprivate func dump(message: String, dso: UnsafeRawPointer = #dsohandle,
                           log: OSLog = .default, type: OSLogType = .default,
                           _ args: [CVarArg] = []) {
