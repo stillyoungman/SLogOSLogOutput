@@ -20,7 +20,7 @@ extension Level {
 extension TypeWrapper {
     var cVarArg: CVarArg {
         switch self {
-        case .null: return "null"
+        case .null: return "<null>"
         case .int(let value): return value
         case .unsignedLong(let value): return value
         case .bool(let value): return value
