@@ -3,8 +3,8 @@ import os
 import _SwiftOSOverlayShims
 import SLog
 
-public class OSLogOutput: LogOutput {
-    private static var serialQueue = DispatchQueue(label: "OSLogOutputSerialQueue",
+public class OSLogBackend: LogBackend {
+    private static var serialQueue = DispatchQueue(label: "OSLogBackendSerialQueue",
                                                    qos: .default)
     public static let bundleId = Bundle.main.bundleIdentifier ?? "<NO_BUNDLE_ID>"
 

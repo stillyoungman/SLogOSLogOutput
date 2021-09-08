@@ -1,1 +1,1 @@
-# SLog OSLog output
+# SLog OSLog backend

@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SLogOSLogOutput",
+    name: "SLogOSBackend",
     platforms: [.macOS(.v10_12), .iOS(.v10), .tvOS(.v10), .watchOS(.v3)],
     products: [
         .library(
-            name: "SLogOSLogOutput",
-            targets: ["SLogOSLogOutput"]),
+            name: "SLogOSBackend",
+            targets: ["SLogOSBackend"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/stillyoungman/SLog.git", from: "0.0.1"),
+        .package(url: "https://github.com/stillyoungman/SLog.git", from: "1.0.0"),
     ],
     targets: [
         .target(
-            name: "SLogOSLogOutput",
+            name: "SLogOSBackend",
             dependencies: [
                 "SLog"
             ])
